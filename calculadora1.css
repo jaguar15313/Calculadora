@@ -1,0 +1,137 @@
+.container {
+    background-color: lightblue;
+    border: 1px solid blueviolet;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+  }
+  .h1 {
+    background-color:lightseagreen;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+  }
+  .btn{
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 25px 0 0 0;
+    margin: 0 auto;
+    
+  }
+  
+  .container {
+    display: grid;
+    grid-template: repeat(6,70px) / 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 10px auto;
+    width: 10%;
+    width: 300px;
+    height:400px;
+  }
+  .container .btn:nth-of-type(7) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .container .btn:nth-of-type(8) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .container .btn:nth-of-type(9) {
+    grid-column: 3;
+    grid-row: 2;
+  }
+  .container .btn:nth-of-type(14) {
+    grid-column: 4;
+    grid-row: 2;
+  }
+  .container .btn:nth-of-type(4) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .container .btn:nth-of-type(5) {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .container .btn:nth-of-type(6) {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  .container .btn:nth-of-type(13) {
+    grid-column: 4;
+    grid-row: 3;
+  }
+  .container .btn:nth-of-type(1) {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .container .btn:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .container .btn:nth-of-type(3) {
+    grid-column: 3;
+    grid-row: 4;
+  }
+  .container .btn:nth-of-type(11) {
+    grid-column: 4;
+    grid-row: 4;
+  }
+  .container .btn:nth-of-type(16){
+    grid-column: 2 /span 2;
+    grid-row: 5;
+  }
+  .container .btn:nth-of-type(10) {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .container .btn:nth-of-type(12) {
+    grid-column: 4;
+    grid-row: 5;
+  }
+  .container .btn:nth-of-type(15) {
+    grid-column: 4;
+    grid-row: 1;
+  }
+  
+  @media screen and (max-width: 500px) {
+    body {
+      font-size: 30px;
+    }
+  
+    .container {
+      grid-template-columns: 1fr 1fr 1f 1fr;
+      grid-gap: 3px;
+      grid-auto-rows: 250px;
+    }
+    
+    .container .btn {
+      margin: 10px;
+    }
+    .btn{
+      
+      width: 60px;
+      height: 30px;
+      padding: 5px ;
+      margin: 0 auto;
+      
+    }
+  
+      .container .btn:nth-of-type(16) {
+        grid-column: 2;
+        grid-row: 5;
+      }
+      
+      .container .btn:nth-of-type(15) {
+        grid-column: 3;
+        grid-row: 5;
+      }
+    }
+    
+
+  
